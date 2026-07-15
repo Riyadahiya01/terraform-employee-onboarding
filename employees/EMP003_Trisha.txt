@@ -1,0 +1,31 @@
+=============================================================
+            RD CLOUD TECH
+      Employee Welcome Letter
+=============================================================
+
+Welcome Trisha,
+
+We are delighted to welcome you to RD Cloud Tech.
+
+Employee Information
+-------------------------------------------------------------
+Employee ID      : EMP003
+Name             : Trisha
+Designation      : Cloud Support Engineer
+Department       : Cloud Engineering
+City             : Sharjah
+Email            : trisha@rdcloudtech.com
+Joining Date     : 10-Aug-2026
+Manager          : Riya Dahiya
+Employment Type  : Intern
+
+-------------------------------------------------------------
+
+We wish you great success in your journey with us.
+
+Best Regards,
+
+HR Department
+RD Cloud Tech
+
+=============================================================

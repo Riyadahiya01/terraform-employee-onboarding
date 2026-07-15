@@ -1,0 +1,31 @@
+=============================================================
+            RD CLOUD TECH
+      Employee Welcome Letter
+=============================================================
+
+Welcome Geeta,
+
+We are delighted to welcome you to RD Cloud Tech.
+
+Employee Information
+-------------------------------------------------------------
+Employee ID      : EMP001
+Name             : Geeta
+Designation      : Cloud Engineer
+Department       : Cloud Engineering
+City             : Dubai
+Email            : geeta@rdcloudtech.com
+Joining Date     : 01-Aug-2026
+Manager          : Riya Dahiya
+Employment Type  : Full-Time
+
+-------------------------------------------------------------
+
+We wish you great success in your journey with us.
+
+Best Regards,
+
+HR Department
+RD Cloud Tech
+
+=============================================================

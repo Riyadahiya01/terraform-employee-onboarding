@@ -1,0 +1,31 @@
+=============================================================
+            RD CLOUD TECH
+      Employee Welcome Letter
+=============================================================
+
+Welcome Sonia,
+
+We are delighted to welcome you to RD Cloud Tech.
+
+Employee Information
+-------------------------------------------------------------
+Employee ID      : EMP002
+Name             : Sonia
+Designation      : DevOps Engineer
+Department       : Cloud Engineering
+City             : Abu Dhabi
+Email            : sonia@rdcloudtech.com
+Joining Date     : 05-Aug-2026
+Manager          : Riya Dahiya
+Employment Type  : Full-Time
+
+-------------------------------------------------------------
+
+We wish you great success in your journey with us.
+
+Best Regards,
+
+HR Department
+RD Cloud Tech
+
+=============================================================
