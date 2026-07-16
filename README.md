@@ -29,12 +29,13 @@ Automates employee onboarding by generating personalized welcome letters, HR rep
 | Cloud Resources | None (Local Provider) |
 | Difficulty | Beginner → Intermediate |
 
+
 ## 📑 Table of Contents
 
 - [Overview](#-overview)
 - [Project Preview](#-project-preview)
-- [Business Problem](#-business-problem)
-- [Solution](#-solution)
+- [Business Problems](#-business-problems)
+- [Solutions](#-solutions)
 - [Features](#-features)
 - [Project Highlights](#-project-highlights)
 - [Project Architecture](#-project-architecture)
@@ -46,6 +47,7 @@ Automates employee onboarding by generating personalized welcome letters, HR rep
 - [Future Improvements](#-future-improvements)
 - [Author](#-author)
 
+
 ##  Overview
 
 This project simulates a real-world HR onboarding workflow using HashiCorp Terraform.
@@ -53,6 +55,7 @@ This project simulates a real-world HR onboarding workflow using HashiCorp Terra
 Instead of manually preparing employee documents, Terraform dynamically generates welcome letters, HR reports, employee search indexes, and dashboards from structured employee data.
 
 The project demonstrates how Infrastructure as Code (IaC) principles can automate repetitive business processes while applying Terraform best practices such as validation, template rendering, reusable configurations, dynamic expressions, and sensitive variables.
+
 
 ## 📸 Project Preview
 
@@ -63,6 +66,7 @@ The project demonstrates how Infrastructure as Code (IaC) principles can automat
 </p>
 
 ---
+
 
 ### Generated Outputs
 
@@ -118,7 +122,8 @@ The project demonstrates how Infrastructure as Code (IaC) principles can automat
 
 </table>
 
-##  Business Problem
+
+##  Business Problems
 
 In many organizations, HR teams manually prepare onboarding documents for every new employee.
 
@@ -126,7 +131,8 @@ This process is repetitive, time-consuming, and prone to human errors.
 
 As the number of employees grows, maintaining consistency across welcome letters, summaries, and reports becomes difficult.
 
-##  Solution
+
+##  Solutions
 
 This project automates the onboarding workflow using Terraform.
 
@@ -138,6 +144,7 @@ Based on employee information provided in `terraform.tfvars`, Terraform automati
 - HR Dashboard
 
 The project also validates employee data before generating outputs, ensuring consistency and reducing manual effort.
+
 
 ##  Features
 
@@ -152,6 +159,7 @@ The project also validates employee data before generating outputs, ensuring con
 - Reusable local values
 - Clean project structure
 
+
 ##  Project Highlights
 
 - Generates onboarding documents automatically
@@ -159,6 +167,7 @@ The project also validates employee data before generating outputs, ensuring con
 - Demonstrates Infrastructure as Code principles
 - Simulates a real-world onboarding workflow
 - Designed without cloud resources for local learning
+
 
 ##  Project Architecture
 
@@ -208,102 +217,37 @@ I --> K
 J --> K
 ```
 
-##  Folder Structure
 
-employee-onboarding/
-│
-├── assets/
-│   ├── banners/
-│   ├── gifs/
-│   ├── icons/
-│   └── screenshots/
-│
-├── employees/
-│   ├── EMP001_Geeta.txt
-│   ├── EMP002_Sonia.txt
-│   ├── EMP003_Trisha.txt
-│   ├── employee-summary.txt
-│   ├── search-index.txt
-│   └── hr-dashboard.txt
-│
-├── templates/
-│   ├── welcome.tftpl
-│   ├── summary.tftpl
-│   ├── search-index.tftpl
-│   └── dashboard.tftpl
-│
-├── .gitignore
-├── LICENSE
-├── locals.tf
-├── main.tf
-├── outputs.tf
-├── providers.tf
-├── README.md
-├── terraform.tfvars
-├── variables.tf
-└── versions.tf
+## 📂 Folder Structure
 
-##  Terraform Concepts & Skills Demonstrated
+| Folder / File | Description |
+|---------------|-------------|
+| 📁 **assets/** | Stores project banners, screenshots, icons, and other visual assets. |
+| ├── 📁 **banners/** | Repository banner and branding images. |
+| ├── 📁 **screenshots/** | Screenshots used in the README 
+| 📁 **employees/** | Generated onboarding documents created by Terraform. |
+| ├── 📄 EMP001_Geeta.txt | Personalized welcome letter. |
+| ├── 📄 EMP002_Sonia.txt | Personalized welcome letter. |
+| ├── 📄 EMP003_Trisha.txt | Personalized welcome letter. |
+| ├── 📄 employee-summary.txt | Consolidated employee summary report. |
+| ├── 📄 search-index.txt | Employee search index. |
+| └── 📄 hr-dashboard.txt | HR dashboard report. |
+| 📁 **templates/** | Terraform template files used to generate outputs. |
+| ├── 📄 welcome.tftpl | Welcome letter template. |
+| ├── 📄 summary.tftpl | Employee summary template. |
+| ├── 📄 search-index.tftpl | Search index template. |
+| └── 📄 dashboard.tftpl | HR dashboard template. |
+| 📄 **main.tf** | Main Terraform configuration. |
+| 📄 **variables.tf** | Input variable definitions. |
+| 📄 **terraform.tfvars** | Employee data used by Terraform. |
+| 📄 **locals.tf** | Local values and reusable expressions. |
+| 📄 **outputs.tf** | Output values after execution. |
+| 📄 **providers.tf** | Provider configuration. |
+| 📄 **versions.tf** | Required Terraform version and provider constraints. |
+| 📄 **README.md** | Project documentation. |
+| 📄 **LICENSE** | MIT License. |
+| 📄 **.gitignore** | Excludes unnecessary files from Git tracking. |
 
-### Core Terraform
-
-- HashiCorp Terraform
-- Infrastructure as Code (IaC)
-- Terraform CLI
-- Terraform State Management
-- Terraform Providers
-
-### Configuration
-
-- Variables
-- terraform.tfvars
-- Local Values
-- Outputs
-- Sensitive Variables
-
-### Data Structures
-
-- map(object)
-- for_each
-- Dynamic Expressions
-- Functions
-- Conditional Logic
-
-### Templates
-
-- templatefile()
-- Dynamic File Generation
-- Local Provider
-
-### Best Practices
-
-- Variable Validation
-- Reusable Configuration
-- Modular Design
-- Code Formatting (`terraform fmt`)
-- Configuration Validation (`terraform validate`)
-
-
-## 🔄 Workflow
-
-```text
-Employee Data
-      │
-      ▼
-terraform.tfvars
-      │
-      ▼
-Terraform Plan
-      │
-      ▼
-Terraform Apply
-      │
-      ▼
-Generate Reports
-      │
-      ▼
-Employees Folder
-```
 
 ## ▶️ How to Run
 
@@ -337,6 +281,7 @@ terraform plan
 terraform apply
 ```
 
+
 ##  Security Best Practices
 
 This project follows Terraform security best practices.
@@ -355,6 +300,7 @@ This project follows Terraform security best practices.
 - DynamoDB employee records
 - Remote Terraform state backend (Amazon S3 + DynamoDB)
 - Multi-environment deployment (Dev / Test / Production)
+
 
 ## 👩‍💻 Author
 
