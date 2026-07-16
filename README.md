@@ -48,7 +48,7 @@ Automates employee onboarding by generating personalized welcome letters, HR rep
 - [Author](#-author)
 
 
-##  Overview
+##  📖 Overview
 
 This project simulates a real-world HR onboarding workflow using HashiCorp Terraform.
 
@@ -123,7 +123,7 @@ The project demonstrates how Infrastructure as Code (IaC) principles can automat
 </table>
 
 
-##  Business Problems
+## 💼 Business Problems
 
 In many organizations, HR teams manually prepare onboarding documents for every new employee.
 
@@ -132,7 +132,7 @@ This process is repetitive, time-consuming, and prone to human errors.
 As the number of employees grows, maintaining consistency across welcome letters, summaries, and reports becomes difficult.
 
 
-##  Solutions
+## 💡 Solutions
 
 This project automates the onboarding workflow using Terraform.
 
@@ -146,7 +146,7 @@ Based on employee information provided in `terraform.tfvars`, Terraform automati
 The project also validates employee data before generating outputs, ensuring consistency and reducing manual effort.
 
 
-##  Features
+## ✨ Features
 
 - Automated employee onboarding documents
 - Dynamic Terraform templates
@@ -160,7 +160,7 @@ The project also validates employee data before generating outputs, ensuring con
 - Clean project structure
 
 
-##  Project Highlights
+## 🌟 Project Highlights
 
 - Generates onboarding documents automatically
 - Eliminates repetitive HR tasks
@@ -169,7 +169,7 @@ The project also validates employee data before generating outputs, ensuring con
 - Designed without cloud resources for local learning
 
 
-##  Project Architecture
+## 🏗️ Project Architecture
 
 ```mermaid
 flowchart TD
@@ -282,7 +282,7 @@ terraform apply
 ```
 
 
-##  Security Best Practices
+## 🔒 Security Best Practices
 
 This project follows Terraform security best practices.
 
@@ -292,7 +292,7 @@ This project follows Terraform security best practices.
 - Placeholder values such as `DEMO_SECRET_VALUE` are used for educational purposes only.
 
 
-##  Future Improvements
+## 🚀 Future Improvements
 
 - AWS S3 integration for document storage
 - Amazon SES email notifications
