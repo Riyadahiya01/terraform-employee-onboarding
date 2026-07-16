@@ -16,29 +16,32 @@ Automates employee onboarding by generating personalized welcome letters, HR rep
 
 </p>
 
-##  Project Status
+
+## 📌 Project Status
 
 | Property | Value |
 |----------|-------|
-| **Version** | v1.0.0 |
-| **Status** | Completed |
-| **Project Type** | Portfolio Project |
-| **Terraform Version** | v1.x |
-| **Platform** | Windows |
-| **Cloud Resources** | None (Local Provider) |
-| **Difficulty** | Beginner → Intermediate |
+| Version | v1.0.0 |
+| Status | Completed |
+| Project Type | Portfolio Project |
+| Terraform Version | v1.x |
+| Platform | Windows |
+| Cloud Resources | None (Local Provider) |
+| Difficulty | Beginner → Intermediate |
 
-##  Table of Contents
+## 📑 Table of Contents
 
-- [Overview](#overview)
-- [Business Problem](#business-problem)
-- [Solution](#solution)
-- [Key Features](#-key-features)
+- [Overview](#-overview)
+- [Project Preview](#-project-preview)
+- [Business Problem](#-business-problem)
+- [Solution](#-solution)
+- [Features](#-features)
+- [Project Highlights](#-project-highlights)
 - [Project Architecture](#-project-architecture)
 - [Folder Structure](#-folder-structure)
 - [Terraform Concepts & Skills Demonstrated](#-terraform-concepts--skills-demonstrated)
-- [Generated Outputs](#-generated-outputs)
-- [How to Run](#️-how-to-run)
+- [Workflow](#-workflow)
+- [How to Run](#-how-to-run)
 - [Security Best Practices](#-security-best-practices)
 - [Future Improvements](#-future-improvements)
 - [Author](#-author)
@@ -51,17 +54,69 @@ Instead of manually preparing employee documents, Terraform dynamically generate
 
 The project demonstrates how Infrastructure as Code (IaC) principles can automate repetitive business processes while applying Terraform best practices such as validation, template rendering, reusable configurations, dynamic expressions, and sensitive variables.
 
-##  Project Preview
+## 📸 Project Preview
 
-> Screenshots and workflow GIF will be added after the first GitHub release.
+### Repository Overview
 
-| Welcome Letter | HR Dashboard |
-|----------------|--------------|
-| *Coming Soon* | *Coming Soon* |
+<p align="center">
+<img src="assets/screenshots/repository-overview.png" width="100%">
+</p>
 
-| Employee Summary | Search Index |
-|------------------|--------------|
-| *Coming Soon* | *Coming Soon* |
+---
+
+### Generated Outputs
+
+<table>
+
+<tr>
+
+<td align="center" width="50%">
+
+<b>📄 Welcome Letter</b>
+
+<br><br>
+
+<img src="assets/screenshots/welcome-letter.png">
+
+</td>
+
+<td align="center" width="50%">
+
+<b>📊 Employee Summary</b>
+
+<br><br>
+
+<img src="assets/screenshots/employee-summary.png">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<b>🔍 Search Index</b>
+
+<br><br>
+
+<img src="assets/screenshots/search-index.png">
+
+</td>
+
+<td align="center">
+
+<b>📈 HR Dashboard</b>
+
+<br><br>
+
+<img src="assets/screenshots/hr-dashboard.png">
+
+</td>
+
+</tr>
+
+</table>
 
 ##  Business Problem
 
@@ -155,8 +210,13 @@ J --> K
 
 ##  Folder Structure
 
-```text
 employee-onboarding/
+│
+├── assets/
+│   ├── banners/
+│   ├── gifs/
+│   ├── icons/
+│   └── screenshots/
 │
 ├── employees/
 │   ├── EMP001_Geeta.txt
@@ -172,15 +232,16 @@ employee-onboarding/
 │   ├── search-index.tftpl
 │   └── dashboard.tftpl
 │
+├── .gitignore
+├── LICENSE
 ├── locals.tf
 ├── main.tf
 ├── outputs.tf
 ├── providers.tf
+├── README.md
 ├── terraform.tfvars
 ├── variables.tf
-├── versions.tf
-└── README.md
-```
+└── versions.tf
 
 ##  Terraform Concepts & Skills Demonstrated
 
@@ -222,24 +283,27 @@ employee-onboarding/
 - Code Formatting (`terraform fmt`)
 - Configuration Validation (`terraform validate`)
 
-##  Generated Outputs
 
-The project automatically generates the following files:
+## 🔄 Workflow
 
-- 📄 Personalized Employee Welcome Letters
-- 📊 Employee Summary Report
-- 🔍 Employee Search Index
-- 📈 HR Dashboard
-
-| Output              | Description                                      |
-| ------------------- | ------------------------------------------------ |
-| 📄 Welcome Letter   | Personalized onboarding letter for each employee |
-| 📊 Employee Summary | Summary report of all employees                  |
-| 🔍 Search Index     | Quick employee lookup file                       |
-| 📈 HR Dashboard     | High-level HR overview                           |
-
-
-> **Note:** Screenshots of the generated outputs will be added in the next update.
+```text
+Employee Data
+      │
+      ▼
+terraform.tfvars
+      │
+      ▼
+Terraform Plan
+      │
+      ▼
+Terraform Apply
+      │
+      ▼
+Generate Reports
+      │
+      ▼
+Employees Folder
+```
 
 ## ▶️ How to Run
 
