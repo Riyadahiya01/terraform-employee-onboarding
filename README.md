@@ -59,7 +59,7 @@ The project demonstrates how Infrastructure as Code (IaC) principles can automat
 ### Repository Overview
 
 <p align="center">
-<img src="assets/screenshots/repository-overview.png" width="100%">
+<img src="assets/screenshots/Repository-overview.png" width="100%">
 </p>
 
 ---
